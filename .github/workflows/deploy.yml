@@ -33,7 +33,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         # Set an environment variable with the deployment URL from secrets
         env:
-          DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          DEPLOY_URL: ${{ https://api.render.com/deploy/srv-ctue638gph6c73eq1uqg?key=rGqB1gbiy6Y }}
         # Run the deployment command
         run: |
           curl "$DEPLOY_URL"
